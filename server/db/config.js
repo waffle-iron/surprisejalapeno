@@ -30,4 +30,4 @@ knex.schema.hasTable('news').then(result => {
   return 0;
 });
 
-exports = knex;
+module.exports = knex;
