@@ -18,8 +18,11 @@ knex.schema.hasTable('news').then(result => {
       table.increments();
       table.string('title');
       table.integer('rating');
+      table.string('category');
       table.string('source');
-      table.timestamps();
+      table.string('url');
+      table.dateTime('published');
+      table.timestamp('created_at');
       console.log('Table "news" created');
     });
   }
