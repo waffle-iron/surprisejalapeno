@@ -18,7 +18,9 @@ knex.schema.hasTable('news').then(result => {
       table.increments();
       table.string('title');
       table.integer('rating');
+      table.string('location');
       table.string('category');
+      table.string('description');
       table.string('source');
       table.string('url');
       table.dateTime('published');
