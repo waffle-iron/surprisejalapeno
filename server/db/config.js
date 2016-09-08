@@ -18,7 +18,8 @@ knex.schema.hasTable('news').then(result => {
       table.increments();
       table.string('title');
       table.integer('rating');
-      table.string('location');
+      table.decimal('lat', 10, 8);
+      table.decimal('lng', 11, 8);
       table.string('category');
       table.string('description');
       table.string('source');
