@@ -26,10 +26,8 @@ knex.schema.hasTable('news').then(result => {
       table.string('url');
       table.dateTime('published');
       table.timestamp('created_at');
-      console.log('Table "news" created');
     });
   }
-  console.log('Table "news" already exists');
   return 0;
 });
 
