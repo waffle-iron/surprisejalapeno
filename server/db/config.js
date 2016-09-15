@@ -1,9 +1,10 @@
+const config = require('../../env/config');
 const knex = require('knex')({
   client: 'mysql',
   connection: {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    host: config.DB_HOST,
+    user: config.DB_USER,
+    password: config.DB_PASSWORD,
     database: 'app'
   },
   pool: {
